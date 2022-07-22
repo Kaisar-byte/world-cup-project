@@ -1,0 +1,433 @@
+/*~~~~~~~~~~~~~~~~~~~~~ Utility Part started~~~~~~~~~~~~~~~~~~~~~~ */
+body {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~ Utility Part ended~~~~~~~~~~~~~~~~~~~~~~ */
+.container {
+    width: 992px;
+    margin: 0 auto;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~ Header Part started~~~~~~~~~~~~~~~~~~~~~~ */
+.hero-banner {
+    border-radius: 30px;
+    border: 1px solid yellowgreen;
+    padding: 25px;
+    display: flex;
+    background-image: linear-gradient(120deg, #79adfc 0%, #402c2c 100%);
+    margin: 20px 0;
+}
+
+.hero-text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2em;
+    margin-left: 12%;
+    color: #fff;
+}
+
+.hero-text>h1 {
+    font-size: 3em;
+    line-height: 60px;
+}
+
+.hero-img {
+    width: 50%;
+    display: flex;
+    align-content: flex-end;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.hero-img>img {
+    width: 33vw;
+    height: 90vh;
+    margin-bottom: -26px;
+}
+
+span#link-btn {
+    background: orangered;
+    padding: 5px 20px;
+    border-radius: 5px;
+}
+
+span#link-btn>a {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 10px;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~ Header Part ended~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+
+
+/*~~~~~~~~~~~~~~~~~~~~~ Started Event Blog section~~~~~~~~~~~~~~~~~~~~~~ */
+.event-blog {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+aside {
+    width: 42%;
+}
+
+aside nav {
+    display: flex;
+    flex-direction: column;
+    background: black;
+    border: 1px solid #333;
+    padding: 20px;
+    text-align: center;
+    gap: 1em;
+    border-radius: 15px;
+    position: sticky;
+    top: 20px;
+}
+
+aside>nav>a {
+    background: #fff;
+    text-decoration: none;
+    padding: 15px 22px;
+    border-radius: 5px;
+}
+
+aside>nav>a:hover {
+    background: orangered;
+    color: #fff;
+
+}
+
+.blog-article {}
+
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+}
+
+.blog {
+    display: flex;
+    flex-direction: column;
+}
+
+.blog>img {
+    width: 100%;
+}
+
+.blog-text {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    align-content: flex-start;
+    justify-content: center;
+}
+
+a#blog-btn {
+    text-decoration: none;
+    border: 1px solid #585858;
+    padding: 3px 10px;
+    border-radius: 5px;
+}
+
+.event-info {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
+
+.event-info span {
+    display: flex;
+    justify-content: space-around;
+}
+
+.event-info>span>p {
+    padding: 2px 4px;
+}
+
+.fa-regular {
+    color: #585858;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~ Event Blog section Ended~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* >>>>>>>>>>>>>>>>>>>>>>Upcoming Match<<<<<<<<<<<<<<<<<<<<<<< */
+
+
+.teams {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.teams img {
+    width: 70%%;
+}
+
+.teams h4 {
+    margin: auto 8px;
+}
+
+.match {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    border: 1px solid #ddd;
+    width: 235px;
+    padding: 6px;
+    border-radius: 5px;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>Upcoming Match<<<<<<<<<<<<<<<<<<<<<<< */
+
+/*~~~~~~~~~~~~~~~~~~~~~ Footer section Started~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+footer {
+    background: #334c95b8;
+    padding: 35px;
+    margin-top: 20px;
+    color: #fff;
+}
+
+section.footer-body {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+,
+footer {
+    background: #334c95b8;
+    padding: 35px;
+    text-align: center;
+}
+
+section.footer-body {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    gap: .5em;
+    font-size: 20px;
+}
+
+.footer-nav>nav {
+    display: flex;
+    gap: 2.5em;
+}
+
+.footer-nav>nav>a {
+    text-decoration: none;
+    color: #ddd;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~ Footer section Ended~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+
+
+/*~~~~~~~~~~~~~~~~~~~~~ Footer section Ended~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+/* >>>>>>>>>>>>>>>>Media Queries For mobile <<<<<<<<<<<<<Ended<<<<<<<<<<<*/
+
+@media screen and (max-width:576px) {
+
+    .container {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-banner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 25px;
+    }
+
+    .hero-text {
+        width: 100%;
+        margin: 0;
+    }
+
+    .hero-img {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2px;
+    }
+
+    .event-blog {
+        display: flex;
+        flex-direction: column;
+    }
+
+    aside {
+        margin: 0;
+        padding: 0;
+        width: 70%;
+        position: none;
+    }
+
+    aside nav {
+        background: none;
+        border: none;
+    }
+
+    aside>nav>a {
+        background: #fff;
+        text-decoration: none;
+        padding: 15px 22px;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+    }
+
+    .blogs {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .blog {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .blog-text {
+        gap: 1.5em
+    }
+
+    .blog {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        width: 70vw;
+    }
+
+    footer {
+        padding: 30px;
+        margin-top: 20px;
+    }
+
+    .footer-nav {
+        width: 100%;
+    }
+
+    .footer-nav>nav {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5em;
+    }
+
+
+    .social-icon>nav {
+        display: flex;
+        gap: 1.5em;
+        color: aliceblue;
+    }
+
+    .footer-body>h3 {
+        color: azure;
+    }
+
+    .footer-nav>nav {
+        flex-wrap: wrap;
+    }
+}
+
+/* >>>>>>>>>>>>>>>>Media Queries For mobile <<<<<<<<<<<<<Ended<<<<<<<<<<<*/
+
+
+/* >>>>>>>>>>>>>>>>Media Queries For Tablet <<<<<<<<<<<<<Ended<<<<<<<<<<<*/
+@media screen and (min-width:577px) and (max-width:700px) {
+    .container {
+        width: 90%
+    }
+
+    .hero-text {}
+
+    .hero-text>h1 {
+        font-size: 38px;
+    }
+
+    .event-blog {
+        display: flex;
+        flex-direction: column;
+    }
+
+    aside {
+        width: 100%;
+    }
+
+    aside nav {
+        background-color: #fff;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border: none;
+    }
+
+    aside nav a {
+        background-color: #fff;
+        border: 1px solid #333;
+    }
+
+    aside nav a:hover {
+        background-color: orangered;
+    }
+
+    .blogs {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-nav nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* >>>>>>>>>>>>>>>>Media Queries For Tablet <<<<<<<<<<<<<Ended<<<<<<<<<<<*/
